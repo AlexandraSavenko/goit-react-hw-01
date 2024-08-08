@@ -7,11 +7,11 @@ import transactions from "../../transactions.json";
 
 export default function App() {
   return (
-    <div>
+    <>
       <ul></ul>
       <Profile user={userData} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </>
   );
 }
