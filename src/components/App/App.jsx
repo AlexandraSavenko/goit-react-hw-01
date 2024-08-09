@@ -8,7 +8,6 @@ import transactions from "../../transactions.json";
 export default function App() {
   return (
     <>
-      <ul></ul>
       <Profile user={userData} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />

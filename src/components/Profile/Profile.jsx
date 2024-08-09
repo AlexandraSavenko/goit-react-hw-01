@@ -1,3 +1,4 @@
+import "./Profile.css";
 export default function Profile({
   user: {
     stats: { followers, views, likes },
@@ -8,23 +9,23 @@ export default function Profile({
   },
 }) {
   return (
-    <div>
+    <div className="profileCard">
       <div>
-        <img src={avatar} alt="User avatar" />
-        <p>{username}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <img className="profileImage" src={avatar} alt="User avatar" />
+        <p className="profileText">{username}</p>
+        <p className="profileText">{tag}</p>
+        <p className="profileText">{location}</p>
       </div>
-      <ul>
-        <li>
+      <ul className="profileList">
+        <li className="profileListItem">
           <span>Followers</span>
           <span>{followers}</span>
         </li>
-        <li>
+        <li className="profileListItem">
           <span>Views</span>
           <span>{views}</span>
         </li>
-        <li>
+        <li className="profileListItem">
           <span>Likes</span>
           <span>{likes}</span>
         </li>
