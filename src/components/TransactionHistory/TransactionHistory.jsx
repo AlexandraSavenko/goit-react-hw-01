@@ -1,4 +1,5 @@
-export default function TransactionHistory() {
+import TransactionHistoryItem from "../TransactionHistoryItem/TransactionHistoryItem";
+export default function TransactionHistory({ items }) {
   return (
     <table>
       <thead>
@@ -8,18 +9,14 @@ export default function TransactionHistory() {
           <th>Currency</th>
         </tr>
       </thead>
-
       <tbody>
-        <tr>
-          <td>Invoice</td>
-          <td>125</td>
-          <td>USD</td>
-        </tr>
-        <tr>
-          <td>Withdrawal</td>
-          <td>85</td>
-          <td>USD</td>
-        </tr>
+        {items.map((item) => {
+          return (
+            <tr key={item.id}>
+              <TransactionHistoryItem thItem={item} />
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
