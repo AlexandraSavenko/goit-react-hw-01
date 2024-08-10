@@ -9,6 +9,9 @@ ul {
   border: 1px solid black;
   text-align: center;
   min-width: min-content;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 .profileImage {
   background-color: rgba(0, 0, 0, 0.897);
@@ -21,7 +24,7 @@ ul {
 }
 .profileText:nth-child(3),
 .profileText:nth-child(4) {
-  color: rgba(0, 0, 0, 0.32);
+  color: rgba(0, 0, 0, 0.39);
 }
 .profileList {
   display: flex;
