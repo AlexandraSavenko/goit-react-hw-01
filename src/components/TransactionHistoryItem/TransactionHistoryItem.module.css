@@ -1,0 +1,10 @@
+.td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.td:nth-child(1) {
+  border-left: 1px solid black;
+  text-transform: capitalize;
+}
