@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
-ul {
+/* ul {
   list-style-type: none;
-}
+} */
 .profileCard {
   border: 1px solid black;
   text-align: center;
