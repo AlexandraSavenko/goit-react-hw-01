@@ -1,3 +1,4 @@
 .container {
-  width: 1440px;
+  width: fit-content;
+  margin: 0 auto;
 }
