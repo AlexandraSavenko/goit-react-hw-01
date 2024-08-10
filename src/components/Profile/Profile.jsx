@@ -14,7 +14,7 @@ export default function Profile({
       <div>
         <img className={css.profileImage} src={avatar} alt="User avatar" />
         <p className={css.profileText}>{username}</p>
-        <p className={css.profileText}>{tag}</p>
+        <p className={css.profileText}>@{tag}</p>
         <p className={css.profileText}>{location}</p>
       </div>
       <ul className={css.profileList}>
