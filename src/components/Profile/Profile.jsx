@@ -20,15 +20,15 @@ export default function Profile({
       <ul className={css.profileList}>
         <li className={css.profileListItem}>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span className={css.numbers}>{followers}</span>
         </li>
         <li className={css.profileListItem}>
           <span>Views</span>
-          <span>{views}</span>
+          <span className={css.numbers}>{views}</span>
         </li>
         <li className={css.profileListItem}>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span className={css.numbers}>{likes}</span>
         </li>
       </ul>
     </div>

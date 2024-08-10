@@ -7,6 +7,7 @@
 } */
 .profileCard {
   border: 1px solid black;
+  border-radius: 8px;
   text-align: center;
   min-width: min-content;
   width: 450px;
@@ -22,10 +23,12 @@
 .profileText {
   font-size: 40px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .profileText:nth-child(3),
 .profileText:nth-child(4) {
   color: rgba(0, 0, 0, 0.39);
+  font-weight: normal;
 }
 .profileList {
   display: flex;
@@ -44,4 +47,7 @@
 }
 .profileListItem:not(:last-child) {
   border-right: 1px solid black;
+}
+.numbers {
+  font-weight: bold;
 }
